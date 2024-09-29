@@ -45,5 +45,5 @@ server create a authorized_keys
 this authorized_keys === id_rsa.pub
 
 Custom ssh config:
-
+connected
 
