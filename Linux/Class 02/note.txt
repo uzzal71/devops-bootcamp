@@ -1,0 +1,49 @@
+ssh shawshank@ip-address
+sudo systemctl status ssh.service
+vim /etc/ssh/sshd_config
+Esc
+:q!
+:wq!
+sudo vim /etc/ssh/sshd_config
+Step 01:
++++++++++++
+Server secury
+change port
+How many port available:
+Answer: 1024
+Dynamic ports range from 49152 to 65535
+
+Port 5678
+sudo systemctl restart ssh.service
+
+Now try to login:
++++++++++++++++++
+ssh shawshank@192.168.0.119
+ssh: connect to host 192.168.0.119 port 22: Connection refused
+Because change port
+
+Try Again:
+++++++++++
+ssh -p 5678 shawshank@192.168.0.119
+
+Static IP Config:
+++++++++++
+sudo vim /etc/netplan/00-installer-config.yaml
+
+ssh-key base authentication:
+++++++++++++++++++++++++++++
+server: ssh-keygen
+cd .ssh/
+ll
+cat id_rsa
+cat id_rsa.pub
+
+Local machine only share pub key********************
+
+ssh-copy-id -p 5878 shawshank@192.168.0.119
+server create a authorized_keys
+this authorized_keys === id_rsa.pub
+
+Custom ssh config:
+
+
