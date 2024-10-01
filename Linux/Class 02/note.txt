@@ -53,3 +53,9 @@ Host myhost
   Port 5439
   IdentityFile ~/.ssh/key
 
+
+Karo Jodi ssh client to server kaj na kore:
+++++++++++++++++++++++++++++++++++++++
+ssh-keygen -f "/home/uzzal/.ssh/known_hosts" -R "server ip" 
+ssh-copy-id shawshank@server-ip-address
+ssh shawshank@server-ip-address
