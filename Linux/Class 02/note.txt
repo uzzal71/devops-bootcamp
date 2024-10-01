@@ -45,6 +45,11 @@ server create a authorized_keys
 this authorized_keys === id_rsa.pub
 
 Custom ssh config:
-connected
+vim ~/.ssh/config
 
-continue
+Host myhost
+  HostName hostname/ip
+  User username
+  Port 5439
+  IdentityFile ~/.ssh/key
+
