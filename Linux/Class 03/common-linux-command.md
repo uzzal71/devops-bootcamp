@@ -62,7 +62,20 @@ network:
           addresses: [8.8.8.8, 8.8.4.4]
 ```
 ```bash
-/var/log 
+mv ----> move file
+cp ---> copy file
+```
+
+```bash
+pwd
+/home/shawshank
+cd /
+pwd
+/
+ls -la
 cat /etc/passwd
+
+cd /var/log
+
 sudo visudo
 ```
