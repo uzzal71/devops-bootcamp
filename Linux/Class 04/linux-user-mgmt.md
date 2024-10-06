@@ -28,6 +28,8 @@ cd /var/log
 
 cat /etc/group
 
+sudo usermod -gG 
+
 
 
 
