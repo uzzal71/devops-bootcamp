@@ -61,3 +61,8 @@ network:
       nameservers:
           addresses: [8.8.8.8, 8.8.4.4]
 ```
+```bash
+/var/log 
+cat /etc/passwd
+sudo visudo
+```
